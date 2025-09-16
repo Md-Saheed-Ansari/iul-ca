@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import hodImage from "../assets/member.jpg"; // replace with your actual image
+import { Link } from "react-router-dom";
+
 
 const WelcomeAndNews = () => {
 
@@ -69,12 +71,13 @@ const WelcomeAndNews = () => {
     </p>
 
     {/* Learn More link */}
-    <a
-      href="/about/overview"
+    <Link
+      to="/about/overview"
       className="text-[#4f65be] mt-3 inline-block font-medium clear-both"
+      onClick={() => window.scrollTo(0, 0)}
     >
       Learn more →
-    </a>
+    </Link>
   </div>
 </div>
 

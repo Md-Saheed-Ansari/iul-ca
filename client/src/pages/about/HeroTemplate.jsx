@@ -9,7 +9,7 @@ const HeroTemplate = ({ stats = { programs: 0, teachers: 0, research: 0 } }) => 
                <div className="relative z-10 justify-center hidden min-[768px]:flex w-full -mt-44 gap-6 bottom-10">
                  
                  {/* Programs */}
-                 <NavLink to="/program">
+                 <NavLink to="/program" onClick={() => window.scrollTo(0, 0)}>
                    <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-74 flex cursor-pointer group 
                                   max-[990px]:w-55 max-[990px]:h-34 transition-all duration-300">
                      <div className="w-1/2 flex items-center justify-center">
@@ -32,7 +32,7 @@ const HeroTemplate = ({ stats = { programs: 0, teachers: 0, research: 0 } }) => 
                  </NavLink>
          
                  {/* Teachers */}
-                 <NavLink to="/people/faculty">
+                 <NavLink to="/people/faculty" onClick={() => window.scrollTo(0, 0)}>
                    <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-74 flex cursor-pointer group 
                                    max-[990px]:w-55 max-[990px]:h-34 transition-all duration-300">
                      <div className="w-1/2 flex items-center justify-center">
@@ -55,7 +55,7 @@ const HeroTemplate = ({ stats = { programs: 0, teachers: 0, research: 0 } }) => 
                  </NavLink>
          
                  {/* Research */}
-                 <NavLink to="/research">
+                 <NavLink to="/research" onClick={() => window.scrollTo(0, 0)}>
                    <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-74 flex cursor-pointer group 
                                   max-[990px]:w-55 max-[990px]:h-34 transition-all duration-300">
                      <div className="w-1/2 flex items-center justify-center">

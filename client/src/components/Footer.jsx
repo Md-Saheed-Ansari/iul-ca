@@ -1,4 +1,5 @@
 import { FaFacebookF, FaGooglePlusG, FaTwitter, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -25,8 +26,8 @@ export default function Footer() {
         <div className="">
           <h3 className="font-bold mb-7">ABOUT US</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href='/about/overview' className="text-[#7c7c7c] hover:text-white hover:underline">Overview</a></li>
-            <li><a href="/about/vision-mission" className="hover:text-white hover:underline text-[#7c7c7c]">Vision & Mission</a></li>
+            <li><Link href='/about/overview' onClick={() => window.scrollTo(0, 0)} className="text-[#7c7c7c] hover:text-white hover:underline">Overview</Link></li>
+            <li><Link href="/about/vision-mission" onClick={() => window.scrollTo(0, 0)} className="hover:text-white hover:underline text-[#7c7c7c]">Vision & Mission</Link></li>
           </ul>
         </div>
 

@@ -101,7 +101,7 @@ const HeroSection = () => {
       <div className="relative z-10 hidden min-[820px]:flex min-[820px]:-top-50 w-full justify-center gap-6 px-10 bottom-10">
         
         {/* Programs */}
-        <NavLink to="/program" className="flex-1 max-w-xs">
+        <NavLink to="/program" className="flex-1 max-w-xs" onClick={() => window.scrollTo(0, 0)}>
           <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-72
            [@media(max-width:1000px)]:h-34 [@media(max-width:1000px)]:w-62 flex cursor-pointer group
           transition-all duration-300">
@@ -124,7 +124,7 @@ const HeroSection = () => {
         </NavLink>
 
         {/* Teachers */}
-        <NavLink to="/people/faculty" className="flex-1 max-w-xs">
+        <NavLink to="/people/faculty" className="flex-1 max-w-xs" onClick={() => window.scrollTo(0, 0)}>
           <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-72 flex cursor-pointer group 
                   [@media(max-width:1000px)]:h-34 [@media(max-width:1000px)]:w-62 transition-all duration-300">
             <div className="w-1/2 flex items-center justify-center">
@@ -146,7 +146,7 @@ const HeroSection = () => {
         </NavLink>
 
         {/* Research */}
-        <NavLink to="/research" className="flex-1 max-w-xs">
+        <NavLink to="/research" className="flex-1 max-w-xs" onClick={() => window.scrollTo(0, 0)}>
           <div className="bg-white shadow-lg hover:shadow-4xl rounded-[6px] p-4 h-36 w-72 flex cursor-pointer group 
                          [@media(max-width:1000px)]:h-34 [@media(max-width:1000px)]:w-62 transition-all duration-300">
             <div className="w-1/2 flex items-center justify-center">

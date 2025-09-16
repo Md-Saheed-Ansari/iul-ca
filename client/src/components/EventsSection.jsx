@@ -5,7 +5,7 @@ import { FaRegCalendar } from "react-icons/fa";
 const EventsSection = () => {
 
 
-  const API_BASE = "http://localhost:5000"; // backend URL
+  const API_BASE = `${import.meta.env.VITE_BACKEND_URL}` // backend URL
 
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
